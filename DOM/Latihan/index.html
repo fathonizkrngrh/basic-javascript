@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan DOM</title>
+    <style>
+      html, body{
+          height: 100%;
+      }
+      body {
+        text-align: center;
+      }
+      .kotak {
+          width: 25px;
+          height: 25px;
+          margin: 10px auto;
+      }
+      .sliderMerah {
+          background-color: red;
+      }
+      .sliderHijau {
+          background-color: green;
+      }
+      .sliderBiru{
+          background-color: blue;
+      }
+      .pink-muda {
+        background-color: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bermain dengan Warna</h1>
+    <button type="button" id="buttonUbahWarna">Ubah Warna</button>
+        <br></br>
+    <div class="kotak sliderMerah"></div>
+    <input type="range" name="sliderMerah" id="sliderMerah"min='0' max="255">
+    <div class="kotak sliderHijau"></div>
+    <input type="range" name="sliderHijau" id="sliderHijau"min='0' max="255">
+    <div class="kotak sliderBiru"></div>
+    <input type="range" name="sliderBiru" id="sliderBiru"min='0' max="255">
+    <script src="bermainWarna.js"></script>
+  </body>
+</html>
